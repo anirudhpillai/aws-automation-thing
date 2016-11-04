@@ -8,8 +8,7 @@ machine:
 ## Customize test commands
 test:
   override:
-    - ls
-    - cd aws-automation-thing && ./testbuild.sh
+    - ./testbuild.sh
 
 ## Customize deployment commands
 deployment:
