@@ -12,3 +12,5 @@ deployment:
     commands:
       - ls
       - fab deploy
+      - cd ~/.ssh
+      - ls

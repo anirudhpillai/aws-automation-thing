@@ -2,11 +2,11 @@ from fabric.api import *
 import os
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
+# logging.basicConfig(level=logging.DEBUG)
 
 env.hosts = ["54.229.146.21"]
 env.user = "ubuntu"
-env.key_filename = "./scenario.pem"
+env.key_filename = "~/.ssh/id_prod"
 env.password = ""
 
 # def setup():
