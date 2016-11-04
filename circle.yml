@@ -8,6 +8,7 @@ machine:
 ## Customize test commands
 test:
   override:
+    - ls
     - ./testbuild.sh
 
 ## Customize deployment commands
