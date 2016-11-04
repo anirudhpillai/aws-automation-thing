@@ -1,5 +1,7 @@
 #!/bin/bash
 
-source ../env/bin/activate
-cd ref_manager
+cd ..
+ls
+source env/bin/activate
+cd aws-automation-thing/ref_manager
 python manage.py test
