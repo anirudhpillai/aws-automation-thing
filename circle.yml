@@ -7,6 +7,8 @@ machine:
 
 test:
   override:
+    - cd ref_manager
+    - pip install -r requirements.txt
     - python manage.py test
 
 ## Customize deployment commands
