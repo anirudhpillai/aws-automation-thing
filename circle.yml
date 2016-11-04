@@ -9,8 +9,8 @@ test:
   override:
     - ls
     - cd ref_manager
-    - pip install -r requirements.txt
-    - python manage.py test
+    - cd ref_manager && pip install -r requirements.txt
+    - cd ref_manager && python manage.py test
 
 ## Customize deployment commands
 deployment:
