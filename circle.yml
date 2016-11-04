@@ -2,6 +2,7 @@
 machine:
   pre:
     - pwd
+    - ls
     - ./djangosetup.sh
 
 ## Customize test commands
