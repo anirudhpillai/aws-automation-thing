@@ -1,8 +1,6 @@
 ## Customize the test machine
 machine:
   pre:
-    - pwd
-    - ls
     - cd aws-automation-thing && ./djangosetup.sh
   environment:
     IS_TRAVIS: true
@@ -21,5 +19,3 @@ deployment:
     commands:
       - ls
       - fab deploy
-      - cd ~/.ssh
-      - ls
