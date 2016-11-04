@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd ref_manager
 source ../env/bin/activate
+cd ref_manager
 python manage.py test
