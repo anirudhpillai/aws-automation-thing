@@ -5,12 +5,6 @@ machine:
     - ls
     - cd aws-automation-thing && ./djangosetup.sh
 
-## Customize test commands
-test:
-  override:
-    - ls
-    - ./testbuild.sh
-
 ## Customize deployment commands
 deployment:
   staging:
