@@ -3,17 +3,16 @@ machine:
   pre:
     - pwd
     - ls
-    - cd aws-automation-thing
-    - ./djangosetup.sh
+    - cd aws-automation-thing && ./djangosetup.sh
 
 ## Customize test commands
 test:
   override:
-    - ./testbuild.sh
+    - cd aws-automation-thing &&  ./testbuild.sh
 
 ## Customize deployment commands
 deployment:
   staging:
     branch: dev
     commands:
-      - fab deploy
+      - cd aws-automation-thing && fab deploy
