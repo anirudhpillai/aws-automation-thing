@@ -4,6 +4,8 @@ machine:
     - pwd
     - ls
     - cd aws-automation-thing && ./djangosetup.sh
+  environment:
+    IS_TRAVIS: true
 
 test:
   override:
