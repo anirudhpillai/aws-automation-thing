@@ -3,6 +3,7 @@ machine:
   pre:
     - pwd
     - ls
+    - cd aws-automation-thing
     - ./djangosetup.sh
 
 ## Customize test commands
