@@ -11,4 +11,4 @@ deployment:
     branch: dev
     commands:
       - ls
-      - cd aws-automation-thing && fab deploy
+      - fab deploy
